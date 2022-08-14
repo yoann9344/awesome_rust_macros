@@ -36,6 +36,7 @@ macro_rules! hashmap_string_insert {
 }
 
 
+/// Helper to generate String hashmaps, HashMap<String, u64>, using sugar syntax
 #[macro_export]
 macro_rules! hashmap_u64 {
     ($($k:expr => $v:expr),* $(,)?) => {{
